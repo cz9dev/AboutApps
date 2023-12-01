@@ -19,7 +19,7 @@ In layout
 ~~~
 
 In Classs
-~~~
+~~~ kotlin
     // App Logo
     binding.myComponent.setLogoApp(getDrawable(R.drawable.logo_app)!!)
     // Developer avatar
@@ -55,7 +55,7 @@ In Classs
 
 Another way to show links to social networks would be:
 
-~~~
+~~~ kotlin
     binding.myComponent.setUriGithubApp(Uri.parse("https://apklis.cu/developer/czaldivarp"))
     binding.myComponent.setUriWebSiteApp(Uri.parse("https://apklis.cu/developer/czaldivarp"))
     binding.myComponent.setUriApklisApp(Uri.parse("https://apklis.cu/developer/czaldivarp"))
