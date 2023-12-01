@@ -1,5 +1,6 @@
 # AboutApps library
 [![GitHub license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0)
+[![](https://jitpack.io/v/cz9dev/AboutApps.svg)](https://jitpack.io/#cz9dev/AboutApps)
 
 ## Installing
 
@@ -14,7 +15,7 @@ Add it in your root build.gradle at the end of repositories:
 * Step 2. Add the dependency
 ```groovy
 dependencies {
-   implementation 'com.github.cz9dev:AboutApps:-SNAPSHOT'
+    implementation 'com.github.cz9dev:AboutApps:1.0'
 }
 ```
 
