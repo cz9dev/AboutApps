@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about">About</string>
+    <string name="todo">TODO</string>
+    <string name="app_description">App description</string>
+    <string name="dev_description">Dev description</string>
+    <string name="version_name">v1.0.1</string>
+    <string name="name_dev">Name Dev</string>
+    <string name="user_dev">userdev</string>
+    <string name="github">GitHub</string>
+    <string name="website">Website</string>
+    <string name="apklis">Apklis</string>
+    <string name="todus">Todus</string>
+    <string name="linkedin">LinkedIn</string>
+    <string name="facebook">Facebook</string>
+    <string name="x">X</string>
+    <string name="e_mail">E-mail</string>
+</resources>
