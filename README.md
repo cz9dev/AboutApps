@@ -1,11 +1,27 @@
 # AboutApps library
 [![GitHub license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0)
+[![](https://jitpack.io/v/cz9dev/AboutApps.svg)](https://jitpack.io/#cz9dev/AboutApps)
 
 ## Installing
 
+* Step 1. Add the JitPack repository to your build file
+Add it in your root build.gradle at the end of repositories:
+```groovy
+    repositories{
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+```
+* Step 2. Add the dependency
+```groovy
+dependencies {
+    implementation 'com.github.cz9dev:AboutApps:1.0'
+}
+```
+
 ## Usage:
 In layout
-~~~
+```xml
 
 <cu.tiaris.aboutlibrary.view.AboutLayout
         android:id="@+id/my_component"
@@ -16,10 +32,10 @@ In layout
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
-~~~
+```
 
 In Classs
-~~~
+```kotlin
     // App Logo
     binding.myComponent.setLogoApp(getDrawable(R.drawable.logo_app)!!)
     // Developer avatar
@@ -51,11 +67,11 @@ In Classs
         Uri.parse("https://apklis.cu/developer/czaldivarp"),
         null
     )
-~~~
+```
 
 Another way to show links to social networks would be:
 
-~~~
+```kotlin
     binding.myComponent.setUriGithubApp(Uri.parse("https://apklis.cu/developer/czaldivarp"))
     binding.myComponent.setUriWebSiteApp(Uri.parse("https://apklis.cu/developer/czaldivarp"))
     binding.myComponent.setUriApklisApp(Uri.parse("https://apklis.cu/developer/czaldivarp"))
@@ -68,7 +84,7 @@ Another way to show links to social networks would be:
     binding.myComponent.setUriFacebookDev(Uri.parse("https://apklis.cu/developer/czaldivarp"))
     binding.myComponent.setUriXDev(Uri.parse("https://apklis.cu/developer/czaldivarp"))
     binding.myComponent.setEMailDev("czaldivarp@nauta.cu")
-~~~
+```
 ## Compatibility
 minSdk = 24
 
