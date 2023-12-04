@@ -1,18 +1,14 @@
 pluginManagement {
     repositories {
-        maven {
-            url 'http://10.15.23.5:8081/repository/maven-public/'
-            allowInsecureProtocol true
-        }
+        maven { url "https://mirrors.cloud.tencent.com/maven/" }
+        maven { url "https://jitpack.io" }
     }
 }
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
-        maven {
-            url 'http://10.15.23.5:8081/repository/maven-public/'
-            allowInsecureProtocol true
-        }
+        maven { url "https://mirrors.cloud.tencent.com/maven" }
+        maven { url "https://jitpack.io" }
     }
 }
 
