@@ -2,6 +2,8 @@
 [![GitHub license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0)
 [![](https://jitpack.io/v/cz9dev/AboutApps.svg)](https://jitpack.io/#cz9dev/AboutApps)
 
+## Screenshot
+![Screenshot](images/screenshot.png "Screenshot")
 ## Installing
 
 * Step 1. Add the JitPack repository to your build file
@@ -89,7 +91,7 @@ Another way to show links to social networks would be:
 minSdk = 24
 
 ## Developers
-cz9dev
+[cz9dev](https://github.com/cz9dev "cz9dev")
 
 ## License
 ```
