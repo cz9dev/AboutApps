@@ -19,5 +19,5 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "AboutApps"
-include(":app")
+include ':app'
 include ':aboutlibrary'
