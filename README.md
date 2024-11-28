@@ -88,7 +88,7 @@ Another way to show links to social networks would be:
     binding.myComponent.setEMailDev("czaldivarp@nauta.cu")
 ```
 ## Compatibility
-minSdk = 21
+minSdk = 23
 
 ## Developers
 [cz9dev](https://github.com/cz9dev "cz9dev")

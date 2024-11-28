@@ -4,7 +4,8 @@ pluginManagement {
         maven { url "https://mvnrepository.com/" }
         maven { url "https://nexus.xebialabs.com/nexus/content/repositories/public" }
         maven { url "https://repo1.maven.org/maven2" }
-        google()
+        maven { url 'https://mirrors.cloud.tencent.com/maven/'}
+        //google()
     }
 }
 dependencyResolutionManagement {
@@ -14,7 +15,8 @@ dependencyResolutionManagement {
         maven { url "https://mvnrepository.com/" }
         maven { url "https://nexus.xebialabs.com/nexus/content/repositories/public" }
         maven { url "https://repo1.maven.org/maven2" }
-        google()
+        maven { url 'https://mirrors.cloud.tencent.com/maven/'}
+        //google()
     }
 }
 
