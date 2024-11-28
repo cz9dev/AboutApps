@@ -56,18 +56,18 @@ In Classs
     binding.myComponent.setDescriptionDev("Desarrollador amante a las tic, el deporte. En mi tiempo libre miro las estrellas.")
     // Link of the app and the developer
     binding.myComponent.everyLink(
-        Uri.parse("https://apklis.cu/developer/czaldivarp"),
-        Uri.parse("https://apklis.cu/developer/czaldivarp"),
-        null,
-        Uri.parse("https://apklis.cu/developer/czaldivarp"),
-        Uri.parse("https://apklis.cu/developer/czaldivarp"),
-        Uri.parse("https://apklis.cu/developer/czaldivarp"),
-        Uri.parse("https://apklis.cu/developer/czaldivarp"),
-        Uri.parse("https://apklis.cu/developer/czaldivarp"),
-        Uri.parse("https://apklis.cu/developer/czaldivarp"),
-        Uri.parse("https://apklis.cu/developer/czaldivarp"),
-        Uri.parse("https://apklis.cu/developer/czaldivarp"),
-        null
+        uriGitHubApp = Uri.parse("https://web.example.com"),
+        uriWebSiteApp = Uri.parse("https://web.example.com"),
+        uriApklisApp = Uri.parse("https://web.example.com"),
+        uriTodusApp = Uri.parse("https://web.example.com"),
+        uriGitHubDev = Uri.parse("https://web.example.com"),
+        uriWebSiteDev = Uri.parse("https://web.example.com"),
+        uriApklisDev = Uri.parse("https://web.example.com"),
+        uriTodusDev = Uri.parse("https://web.example.com"),
+        uriLinkedInDev = Uri.parse("https://web.example.com"),
+        uriFacebookDev = Uri.parse("https://web.example.com"),
+        uriXDev = Uri.parse("https://web.example.com"),
+        eMailDev = null
     )
 ```
 
