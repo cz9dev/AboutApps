@@ -23,6 +23,7 @@ class AboutLayout @JvmOverloads constructor(
     private var uriWebSiteApp: Uri? = null
     private var uriApklisApp: Uri? = null
     private var uriTodusApp: Uri? = null
+    private var uriTelegramApp: Uri? = null
     private var uriGitHubDev: Uri? = null
     private var uriWebSiteDev: Uri? = null
     private var uriApklisDev: Uri? = null
@@ -31,11 +32,13 @@ class AboutLayout @JvmOverloads constructor(
     private var uriFacebookDev: Uri? = null
     private var uriXDev: Uri? = null
     private var eMailDev: String? = null
+    private var uriTelegramDev: Uri? = null
 
     private var llGitHubApp: LinearLayout
     private var llWebSiteApp: LinearLayout
     private var llApklisApp: LinearLayout
     private var llTodusApp: LinearLayout
+    private var llTelegramApp: LinearLayout
     private var llGitHubDev: LinearLayout
     private var llWebSiteDev: LinearLayout
     private var llApklisDev: LinearLayout
@@ -44,6 +47,7 @@ class AboutLayout @JvmOverloads constructor(
     private var llFacebookDev: LinearLayout
     private var llXDev: LinearLayout
     private var llEMailDev: LinearLayout
+    private var llTelegramDev: LinearLayout
 
     init {
         LayoutInflater.from(context).inflate(R.layout.component_about_cz9dev, this, true)
@@ -52,6 +56,7 @@ class AboutLayout @JvmOverloads constructor(
         this.llWebSiteApp = findViewById(R.id.ll_website_app)
         this.llApklisApp = findViewById(R.id.ll_apklis_app)
         this.llTodusApp = findViewById(R.id.ll_todus_app)
+        this.llTelegramApp = findViewById(R.id.ll_telegram_app)
         this.llGitHubDev = findViewById(R.id.ll_github_dev)
         this.llWebSiteDev = findViewById(R.id.ll_website_dev)
         this.llApklisDev = findViewById(R.id.ll_apklis_dev)
@@ -60,6 +65,7 @@ class AboutLayout @JvmOverloads constructor(
         this.llFacebookDev = findViewById(R.id.ll_facebook_dev)
         this.llXDev = findViewById(R.id.ll_twitter_dev)
         this.llEMailDev = findViewById(R.id.ll_email_dev)
+        this.llTelegramDev = findViewById(R.id.ll_telegram_dev)
 
         llGitHubApp.setOnClickListener {
             if (uriGitHubApp != null) {
@@ -85,6 +91,13 @@ class AboutLayout @JvmOverloads constructor(
         llTodusApp.setOnClickListener {
             if (uriTodusApp != null) {
                 val intent = Intent(Intent.ACTION_VIEW, uriTodusApp)
+                context.startActivity(intent)
+            }
+        }
+
+        llTelegramApp.setOnClickListener {
+            if (uriTelegramApp != null) {
+                val intent = Intent(Intent.ACTION_VIEW, uriTelegramApp)
                 context.startActivity(intent)
             }
         }
@@ -146,6 +159,13 @@ class AboutLayout @JvmOverloads constructor(
                 context.startActivity(intent)
             }
         }
+
+        llTelegramDev.setOnClickListener {
+            if (uriTelegramDev != null) {
+                val intent = Intent(Intent.ACTION_VIEW, uriTelegramDev)
+                context.startActivity(intent)
+            }
+        }
     }
 
     /**
@@ -154,6 +174,7 @@ class AboutLayout @JvmOverloads constructor(
      * @param uriWebSiteApp to uriWebSiteApp
      * @param uriApklisApp to uriApklisApp
      * @param uriTodusApp to uriTodusApp
+     * @param uriTelegramApp to uriTelegramApp
      * @param uriGitHubDev to uriGitHubDev
      * @param uriWebSiteDev to uriWebSiteDev
      * @param uriApklisDev to uriApklisDev
@@ -162,12 +183,14 @@ class AboutLayout @JvmOverloads constructor(
      * @param uriFacebookDev to uriFacebookDev
      * @param uriXDev to uriXDev
      * @param eMailDev example: people@gmail.com
+     * @param uriTelegramDev to uriTelegramDev
      * */
     fun everyLink(
         uriGitHubApp: Uri? = null,
         uriWebSiteApp: Uri? = null,
         uriApklisApp: Uri? = null,
         uriTodusApp: Uri? = null,
+        uriTelegramApp: Uri? = null,
         uriGitHubDev: Uri? = null,
         uriWebSiteDev: Uri? = null,
         uriApklisDev: Uri? = null,
@@ -175,7 +198,8 @@ class AboutLayout @JvmOverloads constructor(
         uriLinkedInDev: Uri? = null,
         uriFacebookDev: Uri? = null,
         uriXDev: Uri? = null,
-        eMailDev: String? = null
+        eMailDev: String? = null,
+        uriTelegramDev: Uri? = null
     ) {
         if (uriGitHubApp != null) {
             this.uriGitHubApp = uriGitHubApp
@@ -192,6 +216,10 @@ class AboutLayout @JvmOverloads constructor(
         if (uriTodusApp != null) {
             this.uriTodusApp = uriTodusApp
             this.llTodusApp.visibility = View.VISIBLE
+        }
+        if (uriTelegramApp != null) {
+            this.uriTelegramApp = uriTelegramApp
+            this.llTelegramApp.visibility = View.VISIBLE
         }
         if (uriGitHubDev != null) {
             this.uriGitHubDev = uriGitHubDev
@@ -224,6 +252,10 @@ class AboutLayout @JvmOverloads constructor(
         if (eMailDev != null) {
             this.eMailDev = eMailDev
             this.llEMailDev.visibility = View.VISIBLE
+        }
+        if (uriTelegramDev != null) {
+            this.uriTelegramDev = uriTelegramDev
+            this.llTelegramDev.visibility = View.VISIBLE
         }
     }
 
@@ -318,7 +350,7 @@ class AboutLayout @JvmOverloads constructor(
     }
 
     /**
-     * Uri de red social
+     * Uri de red social Github
      * @param uri
      * */
     fun setUriGithubApp(uri: Uri) {
@@ -327,7 +359,7 @@ class AboutLayout @JvmOverloads constructor(
     }
 
     /**
-     * Uri de red social
+     * Uri del sitio web de la App
      * @param uri
      * */
     fun setUriWebSiteApp(uri: Uri) {
@@ -336,7 +368,7 @@ class AboutLayout @JvmOverloads constructor(
     }
 
     /**
-     * Uri de red social
+     * Uri de la tienda de aplicaciones de Apklis
      * @param uri
      * */
     fun setUriApklisApp(uri: Uri) {
@@ -345,7 +377,7 @@ class AboutLayout @JvmOverloads constructor(
     }
 
     /**
-     * Uri de red social
+     * Uri de red social de Todus de la App
      * @param uri
      * */
     fun setUriTodusApp(uri: Uri) {
@@ -354,7 +386,16 @@ class AboutLayout @JvmOverloads constructor(
     }
 
     /**
-     * Uri de red social
+     * Uri de red social Telegram de la App
+     * @param uri
+     * */
+    fun setUriTelegramApp(uri: Uri) {
+        this.uriTelegramApp = uri
+        llTelegramApp.visibility = View.VISIBLE
+    }
+
+    /**
+     * Uri de red social GitHub
      * @param uri
      * */
     fun setUriGitHubDev(uri: Uri) {
@@ -363,7 +404,7 @@ class AboutLayout @JvmOverloads constructor(
     }
 
     /**
-     * Uri de red social
+     * Uri del sitio web del desarrollador
      * @param uri
      * */
     fun setUriWebSiteDev(uri: Uri) {
@@ -372,7 +413,7 @@ class AboutLayout @JvmOverloads constructor(
     }
 
     /**
-     * Uri de red social
+     * Uri de la tienda de aplicaciones Apklis
      * @param uri
      * */
     fun setUriApklisDev(uri: Uri) {
@@ -381,7 +422,7 @@ class AboutLayout @JvmOverloads constructor(
     }
 
     /**
-     * Uri de red social
+     * Uri de red social Todus
      * @param uri
      * */
     fun setUriTodusDev(uri: Uri) {
@@ -390,7 +431,7 @@ class AboutLayout @JvmOverloads constructor(
     }
 
     /**
-     * Uri de red social
+     * Uri de red social LinkedIn
      * @param uri
      * */
     fun setUriLinkedInDev(uri: Uri) {
@@ -399,7 +440,7 @@ class AboutLayout @JvmOverloads constructor(
     }
 
     /**
-     * Uri de red social
+     * Uri de red social Facebook
      * @param uri
      * */
     fun setUriFacebookDev(uri: Uri) {
@@ -408,7 +449,7 @@ class AboutLayout @JvmOverloads constructor(
     }
 
     /**
-     * Uri de red social
+     * Uri de red social X
      * @param uri
      * */
     fun setUriXDev(uri: Uri) {
@@ -417,11 +458,20 @@ class AboutLayout @JvmOverloads constructor(
     }
 
     /**
-     * Uri de red social
-     * @param uri
+     * Email del desarrollador
+     * @param email
      * */
     fun setEMailDev(email: String) {
         this.eMailDev = email
         llEMailDev.visibility = View.VISIBLE
+    }
+
+    /**
+     * Uri de red social Telegram
+     * @param uri
+     * */
+    fun setUriTelegramDev(uri: Uri) {
+        this.uriTelegramDev = uri
+        llTelegramDev.visibility = View.VISIBLE
     }
 }

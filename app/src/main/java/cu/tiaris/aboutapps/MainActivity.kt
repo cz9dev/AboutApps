@@ -35,16 +35,18 @@ class MainActivity : AppCompatActivity() {
         binding.myComponent.everyLink(
             Uri.parse("https://apklis.cu/developer/czaldivarp"),
             Uri.parse("https://apklis.cu/developer/czaldivarp"),
+            Uri.parse("https://apklis.cu/developer/czaldivarp"),
+            Uri.parse("https://apklis.cu/developer/czaldivarp"),
+            Uri.parse("https://apklis.cu/developer/czaldivarp"),
+            Uri.parse("https://apklis.cu/developer/czaldivarp"),
+            Uri.parse("https://apklis.cu/developer/czaldivarp"),
+            Uri.parse("https://apklis.cu/developer/czaldivarp"),
+            Uri.parse("https://apklis.cu/developer/czaldivarp"),
+            Uri.parse("https://apklis.cu/developer/czaldivarp"),
+            Uri.parse("https://apklis.cu/developer/czaldivarp"),
+            Uri.parse("https://apklis.cu/developer/czaldivarp"),
             null,
-            Uri.parse("https://apklis.cu/developer/czaldivarp"),
-            Uri.parse("https://apklis.cu/developer/czaldivarp"),
-            Uri.parse("https://apklis.cu/developer/czaldivarp"),
-            Uri.parse("https://apklis.cu/developer/czaldivarp"),
-            Uri.parse("https://apklis.cu/developer/czaldivarp"),
-            Uri.parse("https://apklis.cu/developer/czaldivarp"),
-            Uri.parse("https://apklis.cu/developer/czaldivarp"),
-            Uri.parse("https://apklis.cu/developer/czaldivarp"),
-            null
+            Uri.parse("https://apklis.cu/developer/czaldivarp")
         )
 
         // Otra forma para reprecentar los link seria como se muestra en el comentario
